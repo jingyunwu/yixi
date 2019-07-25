@@ -4,15 +4,21 @@ import HelloWorld from '@/components/HelloWorld'
 import Home from '@/components/pages/home'
 import Spot from '@/components/pages/spot'
 import Mine from '@/components/pages/mine'
+import Explore from '@/components/pages/explore'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path: '/home',
+      path: '/',
       name: 'Home',
       component: Home
+    },
+    {
+      path: '/home',
+      name: 'Home',
+      component: Home,
     },
     {
       path: '/spot',
@@ -23,6 +29,11 @@ export default new Router({
       path: '/mine',
       name: 'Mine',
       component: Mine
+    },
+    {
+      path: '/explore',
+      name: 'Explore',
+      component: Explore
     }
   ]
 })

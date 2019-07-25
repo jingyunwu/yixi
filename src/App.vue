@@ -3,7 +3,9 @@
     <keep-alive>
       <router-view/>
     </keep-alive>
-    <v-tabbar></v-tabbar>
+    <div v-for="(item, index) in tabPath" :key="index">
+      <v-tabbar v-show="$route.path === item"></v-tabbar>
+    </div>
   </div>
 </template>
 
@@ -11,6 +13,16 @@
 import tabbar from '@/components/tabbar'
 export default {
   name: 'App',
+  data() {
+    return {
+      tabPath: [
+        '/',
+        '/home',
+        '/spot',
+        '/mine'
+      ]
+    }
+  },
   components: {
     'v-tabbar': tabbar
   }

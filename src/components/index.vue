@@ -39,7 +39,7 @@ export default {
       } else {
         this.isCollect = true
       }
-    }
+    },
   },
   created() {
     if(response.errno === ERR_OK) {

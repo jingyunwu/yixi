@@ -18,7 +18,9 @@ export default {
     'v-index': index
   },
   methods: {
-    goExplore() {}
+    goExplore() {
+      this.$router.push({path:'/explore'});
+    }
   }
 }
 </script>
