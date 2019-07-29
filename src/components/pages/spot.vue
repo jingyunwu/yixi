@@ -34,7 +34,7 @@ import { swiper, swiperSlide } from 'vue-awesome-swiper'
     name: 'spot',
     components: {
       swiper,
-      swiperSlide
+      'swiper-slide':swiperSlide
     },
     data() {
       return {

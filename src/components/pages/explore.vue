@@ -10,6 +10,7 @@
     <van-search placeholder="发现世界的另一面" v-model="value" shape="round" background="#ffffff"/>
     <div class="explore-table">
       <span class="table">标签</span>
+      <exploreTable></exploreTable>
     </div>
     <div class="explore-sort">
       <span class="table">分类</span>
@@ -18,6 +19,7 @@
 </template>
 
 <script>
+import exploreTable from '@/components/explore-table'
 export default {
   name: 'explore',
   data() {
@@ -29,6 +31,9 @@ export default {
     onClickLeft() {
       this.$router.push({path: '/home'})
     },
+  },
+  components: {
+    exploreTable
   }
 }
 </script>
