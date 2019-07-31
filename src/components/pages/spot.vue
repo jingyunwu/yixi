@@ -66,6 +66,7 @@ import { swiper, swiperSlide } from 'vue-awesome-swiper'
     border-radius: 3px
     background #ffffff
     margin-top 80px
+    box-shadow 0px 0px 0px #afaeae
     .img
       border-top-right-radius: 3px
       border-top-left-radius: 3px

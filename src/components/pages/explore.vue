@@ -55,6 +55,7 @@ export default {
     
     .van-search__content
       border 1px solid #e2e5e7
+      box-shadow 0px 0px 1px #afaeae
       z-index 5
       background #ffffff
       height 53px
